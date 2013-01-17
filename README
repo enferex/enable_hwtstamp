@@ -1,0 +1,9 @@
+enable_hwtstamp: Enable Hardware Timestamping
+=============================================
+Simple program to enable hardware timestamping for all received packets.
+This only works for network controllers that support such functionality (e.g.
+Intel i350).
+
+Contact
+=======
+mattdavis9@gmail.com

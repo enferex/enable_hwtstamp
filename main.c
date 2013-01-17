@@ -25,7 +25,7 @@ static void set_settings(int sd, const char *iface)
 	strncpy(dev.ifr_name, iface, sizeof(dev.ifr_name));
 	dev.ifr_data = (void *)&cfg;
 	
-	if (ioctl(sd, SIOCSHWTSTAMP, &dev) == -1)
+	if (ioctl(sd, SIOCSHWTSTAMP, &dev) < 0)
 	{
 		perror("ioctl()");
 		exit(EXIT_FAILURE);
